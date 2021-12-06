@@ -25,8 +25,8 @@ export AWS_DEFAULT_REGION="<your region>"
 yum install automake gcc
 git clone https://github.com/neurobin/shc.git
 cd shc
-sed -i 's/-1.16//g' Makefile
 ./configure
+sed -i 's/-1.16//g' Makefile
 make
 mv src/shc /usr/bin/
 cd ..
