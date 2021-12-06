@@ -38,6 +38,7 @@ rm -rf shc
 ```
 mv /usr/bin/aws{,.orig}
 /usr/bin/shc -U -f asw-cli-wrapper.sh -o /usr/bin/aws
+chmod 700 /usr/bin/aws # 반드시 실행 권한을 700으로 변경, 최소 other에 실행권한이 있으면 안됨(최소 750, 권장 700)
 rm -fv aw-cli-wrapper.sh aws-cli-wrapper.sh.x.c # 반드시 삭제
 ```
 ---
