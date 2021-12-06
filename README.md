@@ -38,7 +38,7 @@ rm -rf shc
 ```
 mv /usr/bin/aws{,.orig}
 /usr/bin/shc -U -f asw-cli-wrapper.sh -o /usr/bin/aws
-rm -fv asw-cli-wrapper.sh # 반드시 삭제
+rm -fv aw-cli-wrapper.sh aws-cli-wrapper.sh.x.c # 반드시 삭제
 ```
 ---
 
